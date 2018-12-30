@@ -4,7 +4,7 @@ class TwitterSearchServices
 		begin
 			results = client.search("#{query}", result_type: "recent").take(3).collect
 		rescue =>	e
-			puts e
+			Rails.logger.warn "Error 12312312 #{e}"
 		end
 	end
 
