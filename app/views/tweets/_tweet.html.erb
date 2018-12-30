@@ -1,14 +1,18 @@
-<div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
-</div>
-<br>
+<% if @tweets %>
+  <% @tweets.each do |tweet| %>
+    <div class="card text-center">
+      <div class="card-header">
+        Tweet
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">by:<%= tweet.user.screen_name %></h5>
+        <p class="card-text"><%= tweet.text %></p>
+        <a href="<%= tweet.user.url %>" class="btn btn-primary">Go to <%= tweet.user.screen_name %> profile</a>
+      </div>
+      <div class="card-footer text-muted">
+        <%= tweet.created_at %>
+      </div>
+    </div>
+    <br>
+  <% end %>
+<% end %>

@@ -18,6 +18,8 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'twitter', '~> 6.2'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
