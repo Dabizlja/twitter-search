@@ -1,24 +1,13 @@
-# README
+# Twitter-search app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Twitter search app is a simple app written in RoR framework and there are few gems we are using inside. We use twitter gem even for this simple search functionality as we can get more functionality to add in the app with this gem will be very easy. Another gem we use here is figaro for securely storing our secret keys. In order to run up pull master branch run bundle install and create database. Than you can run the server and go on the locahost:3000.
 
-Things you may want to cover:
+Libraries we use:
 
-* Ruby version
+* twitter gem
 
-* System dependencies
+* figaro gem
 
-* Configuration
+* postgresql db
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
