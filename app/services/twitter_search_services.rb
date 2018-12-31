@@ -9,7 +9,6 @@ class TwitterSearchServices
 	end
 
 	private
-
 		def client
 			Twitter::REST::Client.new do |config|
 				config.consumer_key        = ENV["consumer_key"]
