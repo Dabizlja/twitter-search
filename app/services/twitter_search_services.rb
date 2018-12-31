@@ -18,4 +18,5 @@ class TwitterSearchServices
 				config.access_token_secret = ENV["access_token_secret"]
 			end
 		end
+	
 end
